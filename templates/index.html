@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Analyzer</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Crypto Analyzer</h1>
+    <p><strong>Time:</strong> {{ time }}</p>
+    <p><strong>Price:</strong> {{ price }}</p>
+    <p><strong>Market Cap:</strong> {{ market_cap }}</p>
+    <p><strong>Volume % Market Cap:</strong> {{ vol_percent }}</p>
+    <p><strong>Inflow:</strong> {{ inflow }}</p>
+    <p><strong>Outflow:</strong> {{ outflow }}</p>
+    <p><strong>Volume 7/30 Ratio:</strong> {{ vol_ratio }}</p>
+    <p><strong>Signal:</strong> {{ signal }}</p>
+    <div>{{ plot | safe }}</div>
+</body>
+</html>
